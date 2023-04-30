@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./layout.module.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -5,8 +6,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <nav className={styles.nav}>
-          <a href="">남성 의류</a>
-          <a href="">여성 의류</a>
+          <Link href="/products/men">남성 의류</Link>
+          <Link href="/products/women">여성 의류</Link>
         </nav>
         <section className={styles.product}>{children}</section>
       </body>

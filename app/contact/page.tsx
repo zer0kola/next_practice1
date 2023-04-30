@@ -1,3 +1,3 @@
-export default function Contact() {
-  return <h1>contact</h1>;
+export default function ContactPage() {
+  return <h1>Contact</h1>;
 }
